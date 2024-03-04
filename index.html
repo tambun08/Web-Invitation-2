@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wedding of Satia & Vino</title>
+    <link rel="icon" href="img/sejuta momen.jpg" type="image/x-icon">
+    <style>
+        head link[rel="icon"] {
+            border-radius: 100%;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Corinthia:wght@400;700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Medula+One&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sansita+Swashed:wght@300..900&family=Uncial+Antiqua&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HxnXlyj5yvSuTYYc50C8DKv1m6lk9SCQbTwcnljIV6WTQJmGBjxGzc3QPTIcqPzU+IUpQOfXVuNfsGmRjJiAMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center text-white" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Satia-Vino-9.jpeg'); background-size: cover;">
+      <main>
+          <h4>The Wedding of</h4>
+          <h1 style="font-family: 'Great Vibes', cursive; font-size: 50px;">Satia & Vino</h1>
+          <h2 style="font-size: 20px;">Sabtu, 20 Januari 2024</h2>
+          <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-end; margin-top: 20vh;">
+              <h3 style="font-size: 20px;">Kepada Yth:</h3>
+              <button id="scrollButton" type="button" style="font-size: 18px; background-color: black; color: white; padding: 10px 40px; border-radius: 20px;"><i class="fas fa-envelope"></i> Buka Undangan </button>                
+          </div>
+      </main>
+  </section>
+
+  <audio id="bgMusic" loop>
+    <source src="sound/maya_marry-your-daughter-by-brian-mc-knight.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <script>
+    const scrollButton = document.getElementById('scrollButton');
+    const bgMusic = document.getElementById('bgMusic');
+    
+    function disableScroll() {
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function enableScroll() {
+      document.body.style.overflow = '';
+    }
+    
+    function playMusic() {
+      bgMusic.play();
+    }
+    
+    function scrollToNextSection() {
+      const nextSection = document.getElementById('nextSection'); 
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  
+    scrollButton.addEventListener('click', function() {
+      enableScroll();
+      scrollButton.style.display = 'none';
+      playMusic();
+      scrollToNextSection();
+    });
+    
+    disableScroll();
+  </script>
+  
+  <style>
+    @keyframes slideInFromBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .slide-in {
+        animation: slideInFromBottom 1s ease-out;
+    }
+
+    #sectionKedua {
+        text-align: center;
+        padding-bottom: 50px;
+        background-size: cover;
+        height: 650px;
+        background-color: #333;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Satia-Vino-2.jpeg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+</style>
+
+
+<section id="sectionKedua" class="text-section text-center slide-in" style="position: relative; overflow: hidden;">
+  <div class="container-fluid">
+      <h1 class="slide-in" style="font-family: 'Times New Roman', Times, serif; font-size: 20px; padding-top: 300px;">The Wedding Of</h1>
+      <h2 class="slide-in" style="font-family: 'Great Vibes', cursive; font-size: 40px;">Satia & Vino</h2>
+      <p class="slide-in" style="font-family: 'Arial', sans-serif; font-size: 16px;">Menuju Hari Bahagia</p>
+      <div class="slide-in" style="display: flex; align-items: center; justify-content: center;">
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;">0 <br>Hari</p>
+          </div>
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;"> : </p>
+          </div>
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;">0 <br>Jam</p>
+          </div>
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;"> : </p>
+          </div>
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;">0 <br>Menit</p>
+          </div>
+          <div style="padding-right: 4%;">
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;"> : </p>
+          </div>
+          <div>
+              <p style="font-family: 'Arial', sans-serif; font-size: 25px;">0 <br>Detik</p>
+          </div>
+      </div>
+  </div> 
+</section>
+
+<style>
+    @keyframes bubble {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-100px) translateX(-50%);
+        }
+        100% {
+            transform: translateY(-200px) translateX(50%);
+        }
+    }
+
+    .bubble {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: rgba(255, 255, 255, 0.5); 
+        border-radius: 50%; 
+        animation: bubble 6s ease-in-out infinite;
+    }
+
+    #sectionKedua::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('gambar_latar_belakang.jpg'); 
+        z-index: -1; 
+    }
+</style>
+
+<script>
+    const section = document.getElementById("sectionKedua");
+    const container = section.querySelector(".container-fluid");
+    const bubbleCount = 5; 
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+        bubble.style.left = `${Math.random() * 100}%`; 
+        bubble.style.animationDelay = `${Math.random() * 6}s`;
+        container.appendChild(bubble);
+    }
+</script>
+
+<script>
+  function createBubble() {
+    const bubble = document.createElement('div');
+    bubble.classList.add('bubble');
+    bubble.style.width = `${Math.random() * 50}px`;
+    bubble.style.height = bubble.style.width;
+    bubble.style.left = `${Math.random() * window.innerWidth}px`;
+    document.getElementById('sectionKedua').appendChild(bubble);
+    setTimeout(() => {
+      bubble.remove();
+    }, 5000);
+  }
+
+  setInterval(createBubble, 300);
+</script>
+
+    <style>
+        #sectionKetiga {
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          overflow: hidden; 
+        }
+        #textContainer {
+          width: 100%;
+          color: white;
+          padding-right: 20px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        #imageContainer {
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          margin-top: 10px;
+        }
+        #carouselImages {
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 2px;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+        }
+        #carouselImages img {
+          width: 100px;
+          height: auto;
+          object-fit: cover;
+          height: 200px;
+          border-radius: 20%;
+          padding: 2px;
+        }
+      
+        @media screen and (max-width: 768px) {
+          #sectionKetiga {
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+          }
+          #textContainer {
+            margin-bottom: 0; 
+          }
+          #imageContainer {
+            margin-top: 0; 
+          }
+        }
+      </style>
+      
+      
+      <style>
+ 
+        @keyframes slideInFromBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .slide-in {
+            animation: slideInFromBottom 1s ease-out;
+        }
+    
+        #sectionKetiga {
+            padding: 50px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #textContainer {
+            text-align: center;
+        }
+    
+        #textContainer h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 45px;
+            color: rgb(247, 191, 87);
+            margin-top: -40px;
+        }
+    
+        #textContainer p {
+            font-style: italic;
+            margin: 20px 0;
+        }
+    
+        #textContainer hr {
+            border: none;
+            margin: 0;
+        }
+    
+        #textContainer h3 {
+            display: inline-block;
+            margin: 0;
+            font-size: 20px;
+        }
+    
+        #imageContainer {
+            margin-left: 50px;
+        }
+    
+        #carouselImages {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 600px;
+        }
+    
+        #carouselImages img {
+            width: 100px;
+            height: 120px;
+            margin: 10px;
+        }
+    </style>
+      <section id="sectionKetiga">
+        <div id="textContainer" class="slide-in">
+            <h2>S & V</h2>
+            <p>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</p>
+            <div>
+                <hr style="border-right: 20px solid white; margin-right: 10px;">
+                <h3>QS. Ar-Rum : 21</h3>
+                <hr style="border-left: 20px solid white; margin-left: 10px;">
+            </div>
+        </div>
+        <div id="imageContainer" class="slide-in">
+            <div id="carouselImages">
+                <img src="img/Satia-Vino-1.jpeg" alt="Image 1">
+                <img src="img/Satia-Vino-2.jpeg" alt="Image 2">
+                <img src="img/Satia-Vino-3.jpeg" alt="Image 3">
+                <img src="img/Satia-Vino-4.jpeg" alt="Image 4">
+                <img src="img/Satia-Vino-5.jpeg" alt="Image 5">
+                <img src="img/Satia-Vino-6.jpeg" alt="Image 6">
+                <img src="img/Satia-Vino-7.jpeg" alt="Image 7">
+                <img src="img/Satia-Vino-8.jpeg" alt="Image 8">
+                <img src="img/Satia-Vino-9.jpeg" alt="Image 9">
+                <img src="img/Satia-Vino-10.jpeg" alt="Image 10">
+            </div>
+        </div>
+    </section>
+
+    
+
+      <section id="sectionBaru" style="position: relative; overflow: hidden; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); background-size: cover; color: white;">
+        <div class="container" style="text-align: center; color: white;">
+            <h2 style="font-size: 30px; margin-top: 30px; color: white;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h2>
+            <p style="font-size: 15px; color: white;">Assalamu`alaikum<br>Warahmatullaahi Wabarakaatuh</p>
+            <p style="font-size: 15px; color: white;">Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami:</p>
+            <div class="content-container" style="display: flex; flex-wrap: wrap;">
+                <div class="full-width" style="width: 100%;">
+                    <div class="gambar" style="width: 50%; float: left;">
+                        <img src="img/Satia-Vino-5.jpeg" alt="gambar1" style="width: 100%; height: auto; max-height: 90vh; border: 2px solid black;">
+                    </div>
+                    <div class="teks" style="width: 50%; float: right; border: 2px solid black; padding: 20px; text-align: left; margin-top: 0; background-color: rgba(128, 128, 128, 0.5);">
+                        <h2 style="font-family: 'Great Vibes', cursive; font-size: 45px;">Satia</h2>
+                        <h3 style="font-family: 'Times New Roman', Times, serif; color: black; font-size: 30px;">Satia Maswa Dini, SE.</h3>
+                        <p>Putri (Alm.) Bapak Bona Torkis Pane <br>& (Almh.) Ibu Farida Ernawati </p>
+                    </div>
+                </div>
+                <div class="full-width" style="width: 100%;">
+                    <div class="gambar" style="width: 50%; float: right; margin-top: 150px;">
+                        <img src="img/Satia-Vino-6.jpeg" alt="gambar1" style="width: 100%; height: auto; max-height: 90vh; border: 2px solid black;">
+                    </div>
+                    <div class="teks" style="width: 50%; float: right; border: 2px solid black; padding: 20px; text-align: right; background-color: rgba(128, 128, 128, 0.5); margin-top: 0;">
+                        <h2 style="font-family: 'Great Vibes', cursive; font-size: 45px;">Vino</h2>
+                        <h3 style="font-family: 'Times New Roman', Times, serif; color: black; font-size: 30px;">Vino Marendra, Amd.T</h3>
+                        <p>Putra dari Bapak Afrijon, S.Pd. <br>Ibu Mazilena </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+      #sectionBaru {
+          position: relative;
+      }
+      #sectionBaru::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); 
+      }
+      #sectionBaru img {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: auto;
+      }
+  </style>
+<style>
+  @keyframes slideInFromBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(100%);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  #weddingEvent {
+      position: relative;
+      overflow: hidden;
+      background-color: #f7f7f7;
+      padding-bottom: 100px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Satia-Vino-2.jpeg');
+      animation: slideInFromBottom 1s ease-out;
+  }
+
+  .container {
+      text-align: center;
+      color: white;
+  }
+
+  .content-container {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 0;
+      float: right;
+      border: 4px solid black;
+      text-align: left;
+      padding-bottom: 50px;
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .content-container img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+  }
+
+</style>
+
+<section id="weddingEvent">
+  <div class="container">
+      <h2 style="font-size: 35px; margin-top: 30px; font-family: 'Times New Roman', Times, serif;">Wedding</h2>
+      <h3 style="font-family: 'Great Vibes', cursive; font-size: 50px;">Event</h3>
+      <p style="font-size: 15px;">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/ <br>Ibu/Saudara/i, untuk menghadiri acara pernikahan kami:</p>
+      <div class="content-container">
+          <img src="img/Satia-Vino-4.jpeg" alt="gambarwedding">
+          <h1 style="margin-top: 20px; font-family: 'Times New Roman', Times, serif; padding-left: 20px;">AKAD NIKAH</h1>
+          <h2 style="font-size: 16px; font-weight: bold; padding-left: 20px;">Sabtu, 20 Januari 2024</h2>
+          <h3 style="font-size: 16px; padding-left: 20px;">08.30 WIB</h3>
+          <h4 style="font-size: 16px; font-weight: bold; padding-left: 20px;">KEMBAR CAFE & VENUE</h4>
+          <p style="font-size: 16px; padding-left: 20px;">Jl. Sakti Lubis No.40, Sitirejo II, Kec. Medan Amplas, Kota Medan, Sumatera <br>Utara 20217</p>
+          <a href="https://www.google.com/maps/place/Jl.+Sakti+Lubis+No.40,+Sitirejo+II,+Kec.+Medan+Amplas,+Kota+Medan,+Sumatera+Utara+20217" target="_blank" style="display: inline-block; background-color: black; color: #fff; padding: 10px 20px; margin-top: 0; text-decoration: none; border-radius: 5px; margin-left: 20px; border-radius: 10%;">Google Maps</a>
+          <div style="width: 100%; max-width: 100%; margin-top: 0; float: right; margin-right: 0; text-align: right;">
+              <h1 style="margin-top: 20px; font-family: 'Times New Roman', Times, serif; padding-right: 20px;">RESEPSI <br>PERNIKAHAN</h1>
+              <h2 style="font-size: 16px; font-weight: bold; padding-right: 20px;">Sabtu, 20 Januari 2024</h2>
+              <h3 style="font-size: 16px; padding-right: 20px;">11.30 WIB s.d 17.00 WIB</h3>
+              <h4 style="font-size: 16px; font-weight: bold; padding-right: 20px;">KEMBAR CAFE & VENUE</h4>
+              <p style="font-size: 16px; padding-right: 20px;">Jl. Sakti Lubis No.40, Sitirejo II, Kec. Medan Amplas, Kota Medan, Sumatera <br>Utara 20217</p>
+              <a href="https://www.google.com/maps/place/Jl.+Sakti+Lubis+No.40,+Sitirejo+II,+Kec.+Medan+Amplas,+Kota+Medan,+Sumatera+Utara+20217" target="_blank" style="display: inline-block; background-color: black; color: #fff; padding: 10px 20px; margin-top: 0; text-decoration: none; border-radius: 5px; margin-right: 20px; border-radius: 10%;">Google Maps</a>
+          </div>
+      </div>         
+  </div>
+</section>
+
+
+<section id="sectionGallery" style="text-align: center;background-color: black; padding-bottom: 40px;">
+  <div class="text" style="padding-top: 30px;">
+      <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; color: white;">Moment</h2>
+      <p style="font-family: 'Great Vibes', cursive; font-size: 50px; color: rgb(250, 189, 76);">Gallery</p>
+  </div>
+  <div class="image-grid">
+      <div class="image">
+          <img src="img/Satia-Vino-1.jpeg" alt="Gambar 1">
+      </div>
+      <div class="image">
+          <img src="img/Satia-Vino-2.jpeg" alt="Gambar 2">
+      </div>
+      <div class="image">
+        <img src="img/Satia-Vino-3.jpeg" alt="Gambar 3">
+    </div>
+    <div class="image">
+        <img src="img/Satia-Vino-4.jpeg" alt="Gambar 4">
+    </div>
+    <div class="image">
+      <img src="img/Satia-Vino-5.jpeg" alt="Gambar 5">
+  </div>
+  <div class="image">
+      <img src="img/Satia-Vino-6.jpeg" alt="Gambar 6">
+  </div>
+  <div class="image">
+    <img src="img/Satia-Vino-7.jpeg" alt="Gambar 7">
+</div>
+<div class="image">
+    <img src="img/Satia-Vino-8.jpeg" alt="Gambar 8">
+</div>
+<div class="image">
+  <img src="img/Satia-Vino-9.jpeg" alt="Gambar 9">
+</div>
+<div class="image">
+  <img src="img/Satia-Vino-10.jpeg" alt="Gambar 10">
+</div>
+  </div>
+  <div id="myModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImg");
+    var images = document.querySelectorAll(".image img");
+    var closeBtn = document.querySelector(".close");
+
+    images.forEach(function(image) {
+        image.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+</script>
+
+
+<style>
+  /* Keyframes for slide-in animation */
+  @keyframes slideInFromLeft {
+      0% {
+          opacity: 0;
+          transform: translateX(-100%);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  #rsvpSection {
+      padding-bottom: 50px;
+      background-color: rgb(241, 240, 240);
+      background-image: url('img/Satia-Vino-3.jpeg');
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      animation: slideInFromBottom 1s ease-out; 
+  }
+
+  .container {
+      text-align: center;
+  }
+
+  .border {
+      border-width: 0.5px;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
+      margin-top: 50px;
+      padding: 20px;
+  }
+
+</style>
+<section id="rsvpSection" class="rsvpSection w-100 mx-auto text-center text-black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="border p-3 rounded">
+                    <form id="attendance-form" method="post" action="#">
+                        <h2 style="font-family: 'Dancing Script', cursive; font-size: 40px; color: black;">WISHES & RSVP</h2>
+                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 16px; margin-top: 20px;">Ucapan Selamat & Konfirmasi Kehadiran</p>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nama-kehadiran" name="nama-kehadiran" placeholder="Nama" required />
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select" id="kehadiran" name="kehadiran" required>
+                                <option value="">Pilih Kehadiran</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak-hadir">Tidak Hadir</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary d-block mx-auto" style="background-color: white; color: black; border-width: 0.5px; border-radius: 5px;">Kirim konfirmasi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+
+
+
+<section id="giftSection" class="giftSection w-100 mx-auto text-center text-white" style="padding-bottom: 100px; background-color: black;">
+  <div class="container">
+      <div class="row">
+          <div class="col" style="padding-top: 100px;">
+            <i class="fas fa-gift" style="font-size: 80px;"></i>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;">SEND US SOME LOVE</h1>
+              <h2 style="margin-top: 10px; font-family: 'Dancing Script', cursive; font-size: 30px;">For Bride & Groom</h2>
+              <p>
+                  Bagi Bapak/Ibu/Saudara/i yang ingin mengirimkan hadian pernikahan dapat melalui:
+              </p>
+              <button type="button" class="btn btn-primary btn-sm d-block mx-auto mb-3 rounded-top" data-bs-toggle="modal" data-bs-target="#bankAccountModal" style="background-color: white; color: black;">
+                <i class="fas fa-gift"></i> Klik Disini 
+              </button>
+              <h3 style="font-size: 15px; padding-top: 40px;">THANK YOU FOR YOUR GIFT</h3>
+              <div style="display: flex; justify-content: center; padding-top: 50px;">
+                <hr style="height: 2px; border-width: 0; color: white; background-color: white; width: 50%;">
+            </div>
+            <h4 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; padding-top: 50px;">PROTOKOL KESEHATAN</h4>
+            <div class="image-container">
+              <figure>
+                  <img src="img/masker.jpg" alt="Gambar 1">
+                  <figcaption>Menggunakan <br> Masker</figcaption>
+              </figure>
+              <figure>
+                  <img src="img/cuci.jpeg" alt="Gambar 2">
+                  <figcaption>Menggunakan <br> Hand Sanitizer</figcaption>
+              </figure>
+              <figure>
+                  <img src="img/air.jpg" alt="Gambar 3">
+                  <figcaption>Mencuci Tangan</figcaption>
+              </figure>
+              <figure>
+                  <img src="img/jarak.jpeg" alt="Gambar 4">
+                  <figcaption>Menjaga Jarak</figcaption>
+              </figure>
+          </div>
+          
+          </div>
+      </div>
+  </div>
+</section>
+
+<style>
+  .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .image-container figure {
+      margin: 10px;
+  }
+</style>
+
+
+
+<section id="sectionTerakhir" style="text-align: center; padding-top: 500px; padding-bottom: 50px; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Satia-Vino-7.jpeg'); background-size: cover; background-position: center; color: white;">
+  <h2 style="font-family: 'Times New Roman', Times, serif;">Terima Kasih</h2>
+  <h3 style="font-family: 'Dancing Script', cursive;">Kami Yang Berbahagia</h3>
+  <p>Kedua Mempelai & keluarga Besar</p>
+</section>
+
+
+<section id="sectionPenutup" style="text-align: center; align-items: center; justify-content: center; padding-top: 30px; margin-top: 50px;">
+  <h2>Design With ❤ By:</h2>
+  <a href="https://sejutamomen.com/">
+    <img src="img/sejuta momen.jpg" alt="Logo" style="width: 100px; height: 100px; border-radius: 50%;">
+  </a>
+  <div>
+    <a href="https://example.com" style="margin-right: 10px;"><i class="fab fa-link"></i></a>
+    <a href="https://instagram.com/example" style="margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</section>
+
+<!-- Modal untuk Informasi Rekening Bank -->
+<div class="modal fade" id="bankAccountModal" tabindex="-1" aria-labelledby="bankAccountModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title text-center mb-4" id="bankAccountModalLabel">WEDDING GIFT</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="border p-3 mb-3">
+                  <h5 class="mb-3">Bank BRI</h5>
+                  <img src="img/Logo-Bank-BRI-2.png" alt="Logo BCA" class="img-fluid mb-3" style="width: 80px;" />
+                  <p>
+                      <span id="bcaAccountNumber">1234567890</span>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard('bcaAccountNumber')">
+                          <i class="fas fa-copy"></i>
+                      </button>
+                      <br />
+                      a.n. Habellio Novare Napitupulu
+                  </p>
+              </div>
+              <div class="border p-3">
+                  <h5 class="mb-3">Bank Mandiri</h5>
+                  <img src="img/Logo-Bank-BNI-PNG.png" alt="Logo Mandiri" class="img-fluid mb-3" style="width: 80px;" />
+                  <p>
+                      <span id="mandiriAccountNumber">0987654321</span>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard('mandiriAccountNumber')">
+                          <i class="fas fa-copy"></i>
+                      </button>
+                      <br />
+                      a.n. Maya Novian Dini Sitompul
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <script>
+      let images = ['img/Satia-Vino-5.jpeg', 'img/Satia-Vino-6.jpeg'];
+      let currentImageIndex = 0;
+      let sectionBaru = document.getElementById('sectionBaru');
+  
+      function changeBackground() {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          sectionBaru.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+      }
+  
+      setInterval(changeBackground, 5000);
+  </script>
+  
+    <script>
+        let images = ['img/Satia-Vino-5.jpeg', 'img/Satia-Vino-6.jpeg'];
+        let currentImageIndex = 0;
+        let sectionBaru = document.getElementById('sectionBaru');
+        
+        function changeBackground() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            sectionBaru.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+        }
+        
+        setInterval(changeBackground, 5000);
+    </script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script>
+        $('#carouselImages').slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 768, 
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2 
+              }
+            }
+          ]
+        });
+      </script>
+    
+    
+    <script>
+        const images = ['img/Satia-Vino-2.jpeg', 'img/Satia-Vino-3.jpeg']; 
+        let currentIndex = 0;
+        const section = document.getElementById('sectionKedua');
+    
+        function changeBackgroundImage() {
+            section.style.backgroundImage = `url('${images[currentIndex]}')`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+    
+        setInterval(changeBackgroundImage, 3000);
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sectionKedua = document.getElementById('sectionKedua');
+
+        function checkSlide() {
+            var slideInAt = (window.scrollY + window.innerHeight) - sectionKedua.offsetHeight / 2;
+            var sectionBottom = sectionKedua.offsetTop + sectionKedua.offsetHeight;
+            var isHalfShown = slideInAt > sectionKedua.offsetTop;
+            var isNotScrolledPast = window.scrollY < sectionBottom;
+
+            if (isHalfShown && isNotScrolledPast) {
+                sectionKedua.classList.add('slide-in-active');
+            } else {
+                sectionKedua.classList.remove('slide-in-active');
+            }
+        }
+
+        window.addEventListener('scroll', checkSlide);
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
